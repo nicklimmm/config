@@ -1,0 +1,462 @@
+pwd
+mkdir .config/nushell
+cp `Library/Application Support/nushell/*` .config/nushell/*
+cp `Library/Application Support/nushell/*` .config/nushell
+ls .config/nushell/
+clear
+which nu
+exit
+chsh
+clear
+ls
+ls | sort-by size | reverse
+ls | where size > 1mb
+ps
+ps | top 5
+clear
+date now
+date now | date to-table
+sys
+sys | get mem
+exit
+$nu.env-path
+clear
+$env.config
+$nu.env-path
+cd $nu.env-path
+cd $nu.env-path/..
+cd `Library/Application Support/nushell/`
+clear
+nvim
+^nvim
+open
+open config.nu
+clear
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+nvim
+clear
+nvim
+clear
+progdir
+clear
+cd ~/Desktop/Programming.nosync/
+clear
+zsh
+clear
+nu --help
+git
+clear
+git clone https://github.com/nushell/nu_scripts
+cd nu_scripts/
+ls
+ls themes/themes/
+use ./themes/themes/catppuccin-mocha.nu
+ls themes/themes | grep catpuccin
+ls themes/themes | grep catppuccin
+$env.config = ($env.config | merge {color_config: (catppuccin-mocha)})
+exit
+clear
+$env.config
+$env.config | get color_config
+use ./themes/themes/catppuccin-mocha.nu<\n>$env.config = ($env.config | merge {color_config: (catppuccin-mocha)})
+cd Desktop/Programming.nosync/nu_scripts/
+use ./themes/themes/catppuccin-mocha.nu<\n>$env.config = ($env.config | merge {color_config: (catppuccin-mocha)})
+$env.config | get color_config
+restart
+start
+exit
+ls
+cd Desktop/Programming.nosync/nu_scripts/
+use ./themes/themes/catppuccin-mocha.nu<\n>$env.config = ($env.config | merge {color_config: (catppuccin-mocha)})
+ls
+$env.config
+clear
+$env
+clear
+$env.PATH
+git
+clear
+nvim
+$env
+clear
+$nu.env-path
+vim
+vi $nu.env-path
+nano
+nano $nu.env-path
+nu
+exit
+nvim
+clear
+exit
+clear
+nvim $nu.env-path
+clear
+help http
+brew install zoxide
+nvim $nu.env-path
+nvim $nu.config-path
+z
+brew install fzf<\n><\n># To install useful key bindings and fuzzy completion:<\n>$(brew --prefix)/opt/fzf/install
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+brew --prefix
+brew --prefix + "/opt"
+clear
+$"($brew --prefix)"
+(brew --prefix)/pot
+(brew --prefix)
+./(brew --prefix)/opt/fzf/install
+cd (brew --prefix)
+ls
+cd opt/
+cd fzf/
+ls
+./install
+z ~
+clear
+$ brew install ripgrep
+brew install ripgrep
+nvim $nu.env-path
+nvim $nu.config-path
+clear
+$nu.config-path
+cd ($nu.config-path)/..
+cd ($nu.config-path)/../
+cd ($nu.config-path)
+cd `Library/Application Support/`
+cd nushell
+clear
+ls
+nvim
+clear
+ls
+mkdir themes
+mv ~/Desktop/Programming.nosync/nu_scripts/themes/themes/catppuccin-mocha.nu themes/
+clear
+cd Desktop/Programming.nosync/
+rm -rf nu_scripts/
+git clone https://github.com/nushell/nu_scripts.git
+nvim
+clear
+ls
+$env.XDG_CONFIG_HOME
+$env | get XD*
+$env | get *
+$en
+$env
+$env | get USER
+clear
+clear
+ls
+clear
+exit
+ls
+clear
+cd ~
+cd .config/
+ls
+rm -rf nushell/
+mkdir nushell
+ls
+zsh
+clear
+c;ear
+clear
+z `~/Library/Application Support/`
+cd `~/Library/Application Support/`
+ls
+cd nushell/
+ls
+mv --help
+clear
+cp -r ~/.config/nushell/* nushell/
+ls nushell/
+cd nushell/
+ls
+clear
+exit
+exit
+zellij
+clear
+z
+clea4r
+clear
+math sqrt 4
+math sqrt
+4 | math sqrt
+ckear
+clear
+nvim $nu.env-path
+nvim $nu.config-path
+brew install starship
+cd `~/Library/Application Support/nushell`
+ls
+cd themes
+ls
+cd ..
+nvim
+exit
+z nushell
+z
+nvim
+clear
+cd `~/Library/Application Support/`
+ls
+cd nushell/
+ls
+ls themes/
+nvim
+clear
+cd ..
+cd ~
+clear
+z --help
+clear
+z Programming.nosync
+ls | columns 
+ls | where type="file"
+ls | where type=file
+ls | where type == file
+rm main.py cluedo.py emails.txt remindx.code-workspace
+clear
+z cgbot
+clear
+exit
+clear
+z
+cd `~/Library/Application Support/nushell`
+ls
+mv themes/catppuccin-mocha.nu .
+ls
+rmdir themes/
+nvim
+clear
+exit
+z
+cd `~/Library/Application Support/nushell`
+ls
+cd ..
+ls | nushell
+ls | grep nushell
+cd nushell
+ls
+nvim
+exit
+zsh
+clear
+cd `~/Library/Application Support/`
+clear
+cd nushell
+ls
+nu catppuccin-mocha.nu
+touch cat.txt
+nu catppuccin-mocha.nu | save cat.txt --append
+cat cat.txt
+nvim
+nu catppuccin-mocha.nu --raw | save cat.txt --append
+nu catppuccin-mocha.nu | save cat.txt --append --raw
+cat cat.txt
+nvim
+nu --raw catppuccin-mocha.nu
+nu --help
+echo (nu catppuccin-mocha.nu)
+echo (nu catppuccin-mocha.nu) --raw
+echo (nu catppuccin-mocha.nu) | save cat.txt
+echo (nu catppuccin-mocha.nu) | save cat.txt --append
+cat cat.txt
+nvim
+nu catppuccin-mocha.nu | describe
+nu catppuccin-mocha.nu | save --raw --append cat.txt
+cat cat.txt
+nvim
+clear
+nvim
+clear
+nvim
+clear
+exit
+cleear
+clear
+git clone --help
+clear
+exit
+z cgbot
+clear
+ls ..
+ls .. | sort-by size | first 10
+ls .. | sort-by size --reverse | first 10
+ls
+ls target/
+ls target/debug
+ls -a .. | sort-by size --reverse | first 10
+clear
+cd ~
+clear
+z cgbot
+z home
+z ~
+clear
+exit
+zellij
+zellij ls
+clear
+exit
+cargo install --locked bacon
+cargo
+cargo --help
+brew
+zsh
+rustup
+clear
+cargo
+nvim $nu.env-path
+clear
+exit
+zellij
+zellij ls
+z program
+clear
+ls | rg cz3007
+ls | grep cz3007
+ls
+grep --help
+rg --help
+rg --help | grep sensi
+ls | grep cz
+ls | rg cz
+ls | rg CZ
+rg --help | rg insen
+ls | rg -i cz
+ls
+ls | where name=cz
+ls | where name == "*cz"
+clear
+ls | where name =~ cz
+ls | where name =~ (?i)cz
+ls | where name =~ "(?i)cz"
+z 3007
+z cz3007
+z CZ3007-Labs/
+git pull
+exit
+clear
+zellij -s cz3007
+clear
+zellij -s
+zelilj ls
+zellij ls
+cd `~/Library/Application Support/`
+ls
+cd nushell/
+ls
+clear
+zsh
+clear
+$env | get HOME
+$env.HOME
+nvim
+cargo
+clear
+z .config
+clear
+clear
+zellij -s conf
+clear
+ls
+rm luarocks-3.9.1.tar.gz sapling_0.0-20221115.080554.34470671.arm64_monterey.bottle.tar.gz
+clear
+z program
+ls
+ls | where name =~ rust
+bash
+clear
+z config
+z program
+http get google.com
+http get https://www.google.com
+clear
+ls
+ls | where name =~ solu
+git clone https://github.com/nicklimmm/solutions.git
+z solutions
+clear
+z home
+z ~
+clear
+z solutions
+mkdir projecteuler
+cd projecteuler/
+ghcup
+ghc
+clear
+zsh
+exit
+ghc
+exit
+nvim
+clear
+nvim
+ghc --version
+ghcup --version
+exit
+ls
+cd haskell/
+ghc problem1.hs
+./problem1
+ghci problem1.hs
+clear
+exit
+exit
+clear
+cd haskell/
+clear
+ghci
+clear
+exit
+cd hask
+exit
+ghci problem2.hs
+clear
+ghci problem3.hs
+ghci problem3.hs\
+ghci problem3.hs
+clear
+ghci problem4.hs
+clear
+zellij -s solutions
+clear
+zellij --help
+exit
+zellij setup
+zellij setup --help
+zellij ls
+htop
+top
+brew install zenith
+zenith
+clear
+zellij --help
+zellij a 
+zellij a solutions
+zellij k solutions
+ls
+zellij ls
+zenith
+clear
+rustup update stable
+clear
+rustup update stable
+clear
+z .config
+ls
+ls zellij
+cat zellij/config.kdl
+$SHELL
+$env.SHELL
+exit
+$env.EDITOR
+$env.VISUAL
+exit
+nvim zellij
+clear
